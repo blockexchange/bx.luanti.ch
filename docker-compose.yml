@@ -43,7 +43,7 @@ services:
 
  # redirects the old domain to the new one
  blockexchange-redirect:
-  image: nginx:1.31.9
+  image: nginx:1.31.10
   restart: always
   networks:
    - terminator
