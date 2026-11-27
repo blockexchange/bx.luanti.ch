@@ -4,7 +4,7 @@
   become: yes
   become_method: sudo
   vars:
-    compose_directory: /data/blockexchange.minetest.ch
+    compose_directory: /data/bx.luanti.ch
   tasks:
     - name: Copy config files
       template:
