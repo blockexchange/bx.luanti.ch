@@ -7,6 +7,10 @@ services:
    - postgres
   env_file:
    - blockexchange.env
+  environment:
+   - WASM_PACK_CACHE_DIR=/data/wasm-packs
+  volumes:
+   - "./data/wasm-packs:/data/wasm-packs"
   deploy:
    replicas: 1
   healthcheck:
