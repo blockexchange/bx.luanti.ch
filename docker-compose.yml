@@ -9,6 +9,7 @@ services:
    - blockexchange.env
   environment:
    - WASM_PACK_CACHE_DIR=/data/wasm-packs
+   - GIT_MEDIA_CACHE_DIR=/data/git-media-cache
   volumes:
    - "./data/wasm-packs:/data/wasm-packs"
   deploy:
